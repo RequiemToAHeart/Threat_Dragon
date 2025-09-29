@@ -63,8 +63,8 @@
             },
             "vertices": [
               {
-                "x": 570,
-                "y": 390
+                "x": 520,
+                "y": -70
               }
             ]
           },
@@ -114,8 +114,8 @@
             },
             "vertices": [
               {
-                "x": 570,
-                "y": 430
+                "x": 520,
+                "y": -30
               }
             ]
           },
@@ -165,8 +165,8 @@
             },
             "vertices": [
               {
-                "x": 570,
-                "y": 490
+                "x": 520,
+                "y": 30
               }
             ]
           },
@@ -216,8 +216,8 @@
             },
             "vertices": [
               {
-                "x": 570,
-                "y": 530
+                "x": 520,
+                "y": 70
               }
             ]
           },
@@ -239,17 +239,17 @@
             ],
             "id": "52a3135b-d6f4-4763-93c8-becfb5e9c21d",
             "source": {
-              "x": 620,
-              "y": 710
+              "x": 570,
+              "y": 250
             },
             "target": {
-              "x": 630,
-              "y": -20
+              "x": 580,
+              "y": -480
             },
             "vertices": [
               {
-                "x": 540,
-                "y": 360
+                "x": 490,
+                "y": -100
               }
             ]
           },
@@ -299,8 +299,8 @@
             },
             "vertices": [
               {
-                "x": 850,
-                "y": 300
+                "x": 800,
+                "y": -160
               }
             ]
           },
@@ -350,8 +350,8 @@
             },
             "vertices": [
               {
-                "x": 750,
-                "y": 300
+                "x": 700,
+                "y": -160
               }
             ]
           },
@@ -373,12 +373,12 @@
             ],
             "id": "ac27695b-5ed8-4f5e-8c80-dd03b09f4679",
             "source": {
-              "x": 540,
-              "y": 270
+              "x": 490,
+              "y": -190
             },
             "target": {
-              "x": 1120,
-              "y": 130
+              "x": 1070,
+              "y": -330
             }
           },
           {
@@ -427,8 +427,8 @@
             },
             "vertices": [
               {
-                "x": 1040,
-                "y": 30
+                "x": 990,
+                "y": -430
               }
             ]
           },
@@ -478,8 +478,8 @@
             },
             "vertices": [
               {
-                "x": 1030,
-                "y": 120
+                "x": 980,
+                "y": -340
               }
             ]
           },
@@ -520,8 +520,8 @@
             ],
             "id": "2ffac4ab-b304-4216-9516-db0a52158ff3",
             "source": {
-              "x": 890,
-              "y": 460
+              "x": 840,
+              "y": 0
             },
             "target": {
               "cell": "e75a55a7-b1e9-4dfe-a499-eb22c2030d75",
@@ -529,8 +529,8 @@
             },
             "vertices": [
               {
-                "x": 1040,
-                "y": 420
+                "x": 990,
+                "y": -40
               }
             ]
           },
@@ -580,19 +580,19 @@
             },
             "vertices": [
               {
-                "x": 1060,
-                "y": 520
+                "x": 1010,
+                "y": 60
               },
               {
-                "x": 1030,
-                "y": 520
+                "x": 980,
+                "y": 60
               }
             ]
           },
           {
             "position": {
-              "x": 710,
-              "y": 30
+              "x": 660,
+              "y": -430
             },
             "size": {
               "width": 150,
@@ -610,6 +610,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 11,
             "ports": {
               "groups": {
                 "top": {
@@ -707,25 +708,12 @@
               "privilegeLevel": "",
               "threats": [
                 {
-                  "id": "e9fb7f33-d13b-4f04-b53d-726445124647",
-                  "title": "New STRIDE threat",
-                  "status": "Open",
-                  "severity": "TBD",
-                  "type": "Spoofing",
-                  "description": "Provide a description for this threat",
-                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
-                  "modelType": "STRIDE",
-                  "new": true,
-                  "number": 7,
-                  "score": ""
-                },
-                {
                   "id": "6c982f13-74f9-4a4e-82cc-26204fa8c28d",
                   "title": "Elevation of Privilege",
                   "status": "Open",
                   "severity": "Low",
                   "type": "Elevation of privilege",
-                  "description": "Provide a description for this threat",
+                  "description": "The browser client may be able to impersonate the context of the web application in order to gain additional privilege.",
                   "mitigation": "Provide remediation for this threat or a reason if status is N/A",
                   "modelType": "STRIDE",
                   "new": false,
@@ -739,15 +727,14 @@
                 "repudiation": 0,
                 "informationDisclosure": 0,
                 "denialOfService": 0,
-                "elevationOfPrivilege": 1
+                "elevationOfPrivilege": 3
               }
-            },
-            "zIndex": 11
+            }
           },
           {
             "position": {
-              "x": 220,
-              "y": 400
+              "x": 170,
+              "y": -60
             },
             "size": {
               "width": 190,
@@ -765,6 +752,7 @@
             },
             "visible": true,
             "shape": "actor",
+            "zIndex": 12,
             "ports": {
               "groups": {
                 "top": {
@@ -848,7 +836,6 @@
               ]
             },
             "id": "5c4ed4f1-aa74-48d4-8c51-c996b656fd82",
-            "zIndex": 12,
             "data": {
               "type": "tm.Actor",
               "name": "Browser\nClient",
@@ -865,24 +852,50 @@
                   "status": "Open",
                   "severity": "Low",
                   "type": "Spoofing",
-                  "description": "Provide a description for this threat",
+                  "description": "The web application may be spoofed by an attacker, and this may lead to unauthorized access to the browser client.",
                   "mitigation": "Provide remediation for this threat or a reason if status is N/A",
                   "modelType": "STRIDE",
                   "new": false,
                   "number": 11,
                   "score": ""
+                },
+                {
+                  "id": "24c1d41e-d08a-40c9-9b12-b6916c17304b",
+                  "title": "New STRIDE threat",
+                  "status": "Open",
+                  "severity": "TBD",
+                  "type": "Repudiation",
+                  "description": "Provide a description for this threat",
+                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "modelType": "STRIDE",
+                  "new": true,
+                  "number": 20,
+                  "score": ""
+                },
+                {
+                  "id": "36b8f75c-4c17-4b0c-8e3b-be24637bdff3",
+                  "title": "New STRIDE threat",
+                  "status": "Open",
+                  "severity": "TBD",
+                  "type": "Repudiation",
+                  "description": "Provide a description for this threat",
+                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "modelType": "STRIDE",
+                  "new": true,
+                  "number": 23,
+                  "score": ""
                 }
               ],
               "threatFrequency": {
-                "spoofing": 2,
+                "spoofing": 3,
                 "repudiation": 0
               }
             }
           },
           {
             "position": {
-              "x": 1221,
-              "y": 45
+              "x": 1171,
+              "y": -415
             },
             "size": {
               "width": 170,
@@ -905,6 +918,7 @@
             },
             "visible": true,
             "shape": "store",
+            "zIndex": 15,
             "ports": {
               "groups": {
                 "top": {
@@ -988,7 +1002,6 @@
               ]
             },
             "id": "5e168002-bfed-423c-8098-5b41b2994bb3",
-            "zIndex": 15,
             "data": {
               "type": "tm.Store",
               "name": "LDAP",
@@ -1005,24 +1018,56 @@
               "threats": [
                 {
                   "id": "61f2bd52-8e76-43c2-9cd2-6afab588b3a5",
-                  "title": "New STRIDE threat",
+                  "title": "Repudiation",
+                  "status": "Open",
+                  "severity": "TBD",
+                  "type": "Repudiation",
+                  "description": "LDAP claims that it did not write data received from an entity on the other side of the trust boundary. Consider using logging or auditing to record the source, time, and a summary of the received data.",
+                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 9,
+                  "score": ""
+                },
+                {
+                  "id": "63ada308-d329-427f-9cd8-ffcb06a81eeb",
+                  "title": "Tampering",
                   "status": "Open",
                   "severity": "TBD",
                   "type": "Tampering",
-                  "description": "Provide a description for this threat",
+                  "description": "LDAP injection is possible, as the user authentication is verified using an LDAP query.",
                   "mitigation": "Provide remediation for this threat or a reason if status is N/A",
                   "modelType": "STRIDE",
-                  "new": true,
-                  "number": 9,
+                  "new": false,
+                  "number": 16,
+                  "score": ""
+                },
+                {
+                  "id": "7027d842-a8d8-49af-8c4f-ff7d2e94f70c",
+                  "title": "Information Disclosure",
+                  "status": "Open",
+                  "severity": "TBD",
+                  "type": "Information disclosure",
+                  "description": "Improper data protection of LDAP can allow an attacker to read information not intended for disclosure. Review authorization settings.",
+                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 22,
                   "score": ""
                 }
-              ]
+              ],
+              "threatFrequency": {
+                "tampering": 1,
+                "repudiation": 1,
+                "informationDisclosure": 1,
+                "denialOfService": 0
+              }
             }
           },
           {
             "position": {
-              "x": 1226,
-              "y": 400
+              "x": 1176,
+              "y": -60
             },
             "size": {
               "width": 160,
@@ -1045,6 +1090,7 @@
             },
             "visible": true,
             "shape": "store",
+            "zIndex": 16,
             "ports": {
               "groups": {
                 "top": {
@@ -1128,7 +1174,6 @@
               ]
             },
             "id": "e75a55a7-b1e9-4dfe-a499-eb22c2030d75",
-            "zIndex": 16,
             "data": {
               "type": "tm.Store",
               "name": "SQL Database",
@@ -1145,24 +1190,56 @@
               "threats": [
                 {
                   "id": "a009cc63-c8a1-4cb2-ad29-39c0d0b5994a",
-                  "title": "New STRIDE threat",
+                  "title": "Repudiation",
+                  "status": "Open",
+                  "severity": "TBD",
+                  "type": "Repudiation",
+                  "description": "The SQL Database claims that it did not write data received from an entity on the other side of the trust boundary. Consider using logging or auditing to record the source, time and a summary of the received data.",
+                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 8,
+                  "score": ""
+                },
+                {
+                  "id": "e26ba69c-ac1b-476f-a638-d1c2993f13e1",
+                  "title": "Tampering",
                   "status": "Open",
                   "severity": "TBD",
                   "type": "Tampering",
+                  "description": "SQL injection is an attack in which malicious code is inserted into strings that are later passed to an instance of SQL Server for parsing and execution.",
+                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 14,
+                  "score": ""
+                },
+                {
+                  "id": "b80b4d74-562b-4702-8b9d-eb257b2bd820",
+                  "title": "New STRIDE threat",
+                  "status": "Open",
+                  "severity": "TBD",
+                  "type": "Information disclosure",
                   "description": "Provide a description for this threat",
                   "mitigation": "Provide remediation for this threat or a reason if status is N/A",
                   "modelType": "STRIDE",
                   "new": true,
-                  "number": 8,
+                  "number": 26,
                   "score": ""
                 }
-              ]
+              ],
+              "threatFrequency": {
+                "tampering": 1,
+                "repudiation": 4,
+                "informationDisclosure": 0,
+                "denialOfService": 0
+              }
             }
           },
           {
             "position": {
-              "x": 740,
-              "y": 385
+              "x": 690,
+              "y": -75
             },
             "size": {
               "width": 150,
@@ -1180,6 +1257,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 17,
             "ports": {
               "groups": {
                 "top": {
@@ -1277,7 +1355,85 @@
               "privilegeLevel": "",
               "threats": [
                 {
-                  "id": "e9fb7f33-d13b-4f04-b53d-726445124647",
+                  "id": "6c982f13-74f9-4a4e-82cc-26204fa8c28d",
+                  "title": "Spoofing",
+                  "status": "Open",
+                  "severity": "Low",
+                  "type": "Spoofing",
+                  "description": "The web application may be spoofed by an attacker, and this may lead to unauthorized access to the browser client.",
+                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 12,
+                  "score": ""
+                },
+                {
+                  "id": "781e5dd6-eef3-4d36-af10-f51b16a4cbd0",
+                  "title": "Elevation of Privilege",
+                  "status": "Open",
+                  "severity": "TBD",
+                  "type": "Elevation of privilege",
+                  "description": "An attacker may pass data into the browser client in order to choose the flow of program execution within the browser client to the attacker's choosing.",
+                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 17,
+                  "score": ""
+                },
+                {
+                  "id": "d28bd67c-81de-46a2-9d31-9a5130491c34",
+                  "title": "Tampering",
+                  "status": "Open",
+                  "severity": "TBD",
+                  "type": "Tampering",
+                  "description": "Data flowing across saved feedback comments may be tampered with by an attacker. Failure to verify that input is as expected is a root cause of a fairly large number of exploitable issues. Consider all paths and the way they handle data. Verify that all input is verified for correctness using an approved-list input validation approach.",
+                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 18,
+                  "score": ""
+                },
+                {
+                  "id": "847336a6-d2d8-437d-a449-c91e99766ebd",
+                  "title": "Repudiation",
+                  "status": "Open",
+                  "severity": "TBD",
+                  "type": "Repudiation",
+                  "description": "The web application claims that it did not receive data from a process on the other side of the trust boundary. Consider using logging or auditing to record the source, time and a summary of the received data.",
+                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 19,
+                  "score": ""
+                },
+                {
+                  "id": "04dabced-2fa2-4255-b04c-5108020e053f",
+                  "title": "Information Disclosure",
+                  "status": "Open",
+                  "severity": "TBD",
+                  "type": "Information disclosure",
+                  "description": "Data flowing across saved feedback comments may be sniffed by an attacker. Depending on what type of data an attacker can read, it may be used to attack other parts of the system or simply be a disclosure of information leading to compliance violations. Consider encrypting the data flow.",
+                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 21,
+                  "score": ""
+                },
+                {
+                  "id": "03bdcef0-43df-43df-8abf-be87d3e149c7",
+                  "title": "Denial Of Service",
+                  "status": "Open",
+                  "severity": "TBD",
+                  "type": "Denial of service",
+                  "description": "The browser client crashes, halts, stops or runs slowly, in all cases violating an availability metric.\nApplication-Layer Flood\n",
+                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 24,
+                  "score": ""
+                },
+                {
+                  "id": "bc228644-ccb5-4038-a0a1-7aa55111164e",
                   "title": "New STRIDE threat",
                   "status": "Open",
                   "severity": "TBD",
@@ -1286,38 +1442,25 @@
                   "mitigation": "Provide remediation for this threat or a reason if status is N/A",
                   "modelType": "STRIDE",
                   "new": true,
-                  "number": 7,
-                  "score": ""
-                },
-                {
-                  "id": "6c982f13-74f9-4a4e-82cc-26204fa8c28d",
-                  "title": "Elevation of Privilege",
-                  "status": "Open",
-                  "severity": "Low",
-                  "type": "Elevation of privilege",
-                  "description": "Provide a description for this threat",
-                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
-                  "modelType": "STRIDE",
-                  "new": false,
-                  "number": 12,
+                  "number": 25,
                   "score": ""
                 }
               ],
               "threatFrequency": {
-                "spoofing": 0,
-                "tampering": 0,
-                "repudiation": 0,
-                "informationDisclosure": 0,
-                "denialOfService": 0,
-                "elevationOfPrivilege": 1
+                "spoofing": 1,
+                "tampering": 1,
+                "repudiation": 1,
+                "informationDisclosure": 1,
+                "denialOfService": 1,
+                "elevationOfPrivilege": 3
               }
-            },
-            "zIndex": 17
+            }
           },
           {
             "shape": "trust-boundary-curve",
             "width": 200,
             "height": 100,
+            "zIndex": 18,
             "connector": "smooth",
             "data": {
               "type": "tm.Boundary",
@@ -1331,26 +1474,25 @@
             ],
             "id": "209dd561-0de4-4394-b915-89f0a970fdf1",
             "source": {
-              "x": 1152,
-              "y": 702
+              "x": 1102,
+              "y": 242
             },
             "target": {
-              "x": 1162,
-              "y": -28
+              "x": 1112,
+              "y": -488
             },
             "vertices": [
               {
-                "x": 1072,
-                "y": 352
+                "x": 1022,
+                "y": -108
               }
-            ],
-            "zIndex": 18
+            ]
           }
         ]
       }
     ],
     "diagramTop": 1,
     "reviewer": "",
-    "threatTop": 13
+    "threatTop": 26
   }
 }
