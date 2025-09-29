@@ -861,34 +861,21 @@
                 },
                 {
                   "id": "24c1d41e-d08a-40c9-9b12-b6916c17304b",
-                  "title": "New STRIDE threat",
+                  "title": "Repudiation",
                   "status": "Open",
                   "severity": "TBD",
                   "type": "Repudiation",
                   "description": "Provide a description for this threat",
                   "mitigation": "Provide remediation for this threat or a reason if status is N/A",
                   "modelType": "STRIDE",
-                  "new": true,
+                  "new": false,
                   "number": 20,
-                  "score": ""
-                },
-                {
-                  "id": "36b8f75c-4c17-4b0c-8e3b-be24637bdff3",
-                  "title": "New STRIDE threat",
-                  "status": "Open",
-                  "severity": "TBD",
-                  "type": "Repudiation",
-                  "description": "Provide a description for this threat",
-                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
-                  "modelType": "STRIDE",
-                  "new": true,
-                  "number": 23,
                   "score": ""
                 }
               ],
               "threatFrequency": {
                 "spoofing": 3,
-                "repudiation": 0
+                "repudiation": 1
               }
             }
           },
@@ -1216,14 +1203,14 @@
                 },
                 {
                   "id": "b80b4d74-562b-4702-8b9d-eb257b2bd820",
-                  "title": "New STRIDE threat",
+                  "title": "Denial of Service",
                   "status": "Open",
                   "severity": "TBD",
-                  "type": "Information disclosure",
-                  "description": "Provide a description for this threat",
+                  "type": "Denial of service",
+                  "description": "An external agent prevents access to SQL Database Server on the other side of the trust boundary.",
                   "mitigation": "Provide remediation for this threat or a reason if status is N/A",
                   "modelType": "STRIDE",
-                  "new": true,
+                  "new": false,
                   "number": 26,
                   "score": ""
                 }
@@ -1232,7 +1219,7 @@
                 "tampering": 1,
                 "repudiation": 4,
                 "informationDisclosure": 0,
-                "denialOfService": 0
+                "denialOfService": 1
               }
             }
           },
@@ -1431,19 +1418,6 @@
                   "new": false,
                   "number": 24,
                   "score": ""
-                },
-                {
-                  "id": "bc228644-ccb5-4038-a0a1-7aa55111164e",
-                  "title": "New STRIDE threat",
-                  "status": "Open",
-                  "severity": "TBD",
-                  "type": "Spoofing",
-                  "description": "Provide a description for this threat",
-                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
-                  "modelType": "STRIDE",
-                  "new": true,
-                  "number": 25,
-                  "score": ""
                 }
               ],
               "threatFrequency": {
@@ -1451,7 +1425,7 @@
                 "tampering": 1,
                 "repudiation": 1,
                 "informationDisclosure": 1,
-                "denialOfService": 1,
+                "denialOfService": 2,
                 "elevationOfPrivilege": 3
               }
             }
@@ -1493,6 +1467,6 @@
     ],
     "diagramTop": 1,
     "reviewer": "",
-    "threatTop": 26
+    "threatTop": 27
   }
 }
